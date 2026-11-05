@@ -1,0 +1,143 @@
+﻿using System;
+
+namespace CS5 
+{
+class Program 
+   {  
+    static void Main(string[] args)
+     {
+      // 
+      // Unidad 2: Funciones II 
+      // Sesión 12: Intrucciones while 30092026
+      // Sintaxis: while 
+      // Inicialización;
+      // while(expresión)
+      // {
+      //       Bloque de instrucciones 
+      //       iterador;
+      // }
+      // iterar: repetir 
+      // Ejemplo 1: Ciclo ascendente (rango de 1-3)
+      // m: variable de control 
+      /* int m = 1; // inicialización 
+      while(m <= 3)
+      { 
+         //Bloque de instrucciones
+         Console.WriteLine($"m: {m}");
+         m += 1; // Iterador
+
+      }
+      */
+      // 1. Definir un ciclo para imprimir tu nombre 5 veces 
+      // Nota: Para la expresion utilizar el operador <
+      int f = 0; // inicialización 
+      while(f < 5)
+      { 
+         Console.WriteLine("Fernando Hernandez");
+         f += 1;
+
+      }
+      // Variable ciclo descendente 
+      int d = 3;
+      while (d >= 1)
+      {
+         Console.WriteLine($"d: {d}");
+         d -= 1;   
+      }
+      // c. Incrementos
+      // Secuencia: 3 6 9 12 15 18
+      int i = 3;
+      while (i <= 18)
+      {
+         Console.WriteLine($"i: {i}");
+         i += 3;
+      }
+     
+      // definir un ciclo para imprimir "331" 8 veces 
+      // nota: para la solucion define un ciclo descendente con decrementos de 2 unidades
+        int y = 15;
+        while (y >= 1)
+        {
+            Console.WriteLine("331");
+            y -= 2;
+        }       
+        // Actividad 1: Ciclo infinito 
+        // 1. Definir ciclo infinito ascendente 
+        // 2. Definir ciclo infinito descendente
+        // Nota. para la solucion, utilizar el operador de difenrecia.
+        // 1.-
+        int h = 24;
+        while (h != 0)
+        {
+            h += 43;
+        }
+        // 2. 
+        int e = 999;
+        while (e != 1000)
+        {
+            e -= 1;
+        }
+       //Fernando Hernandez 331-16 07/10/26
+       
+        //Actividad 2: Medio maraton
+        //Una corrdora de nombre Diana, tiene una zancada (aproximada) de 0.63m. si el sabado, 10 de octubre, correra un medio 
+        //maraton, ¿Cuantas zancadas necesitara para terminar el circuito?
+        //Nota: para la solucion, emplear un ciclo while
+         double zancada = 0.63; // metros
+         double distancia = 21000; // distancia maraton
+         double zancadas = 0; // contador de zancadas
+         double recorrido = 0; // distancia recorrida
+         int numero_hidratacion = 0;
+         int recorrido_hidratacion = 2000;
+         while (recorrido < distancia)
+         {
+           
+            zancadas += 1; // contador de zancadas
+            recorrido += zancada; // distancia recorrida
+            if (recorrido >= recorrido_hidratacion)
+            {
+               numero_hidratacion += 1;
+               recorrido_hidratacion += 2000;
+               Console.WriteLine($"Recorrido: {recorrido} m\nHidratacion: {numero_hidratacion}");
+            }
+          
+         }  
+         
+         // Ciclo for 
+         /*
+         for(inicialización; expresión; iterador)
+         {
+            Bloque de instrucciones
+         }
+         */
+         // Ejemplo: secuencia 35-41
+         for(int m = 35; m < 41; m ++)
+         {
+            Console.WriteLine($"m: {m}");
+         }
+         // definir un ciclo for para la siguiente secuencia: -33 -34 -35 -36 -37 -38 -39 
+         for(int n = -33; n >= -39; n--)
+         {
+            Console.WriteLine($"n: {-n}");
+         }
+         for (int a = 9; a <= 15; a ++)
+         {
+           if (a == 13)
+           { 
+            a += 1; 
+           }
+            Console.WriteLine($"a: {a}");
+         }
+         // Incluir las instrucciones para omitir la impresion de 13
+
+         // un libro tiene un titulo distinto por cada 88 paginas, teniendo el primer titulo en la pagina 1 . escribir un 
+         // programa para imprimir todos los capitulos imprimir titulo y numero de titulo considerando que tiene 539 paginas
+         for (int p = 1; p <=539; p += 88)
+         {
+            int titulo = titulo ++;
+            Console.WriteLine($"Titulo: {titulo} Pagina: {p}");
+         }
+
+     }
+   }
+ }
